@@ -1,7 +1,7 @@
 const rollup = require("rollup");
 const nodeResolve = require("rollup-plugin-node-resolve");
 const commonjs = require("rollup-plugin-commonjs");
-const vue = require("rollup-plugin-vue");
+const vue = require("rollup-plugin-vue").default;
 const pkg = require("../package.json");
 
 const external = Object.keys(pkg.dependencies);
